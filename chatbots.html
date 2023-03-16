@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skynet</title>
+  <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" type="text/css" href="css/chatbot.css">
+</head>
+<body>
+  <!-- Contenedor General -->
+  <div id="header">
+    <nav>
+      <ul>
+        <li id="logos">
+            <img src="img/skynetai_mini.png" height="40px"/>
+            <h1>Skynet AI</h1>
+            <div id="menu">
+              <a class="pulse" href="index.html">Inicio</a>
+              <a class="pulse" href="contacto.html">Contacto</a>
+            </div>
+        </li>
+        <li id="login">
+            <a id="log" href="login.html">Log In</a>
+            <a id="sign" href="sign.html">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>  
+      <div id="contenido">
+        <script
+          SameSite="None; Secure"
+          src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"
+        ></script>
+        <div id="myLandbot" style="width: 100%; height: 700px"></div>
+        <script>
+          var myLandbot = new Landbot.Container({
+            container: "#myLandbot",
+            configUrl:
+              "https://storage.googleapis.com/landbot.online/v3/H-1501075-8OHZ4N7F11VC6A97/index.json",
+          });
+        </script>
+      </div>
+      
+    <footer class="footer">
+        <div class="container-permisos" >
+          <small>©Todos los derechos reservados Skynet AI. Esta página puede ser reproducida con fines
+            no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
+        </small>
+        </div>
+    </footer>
+</body>
+
+</html>

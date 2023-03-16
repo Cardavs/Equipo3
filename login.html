@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+  <!-- Contenedor General -->
+  <div id="header">
+    <nav>
+      <ul>
+        <li id="logos">
+            <img src="img/skynetai_mini.png" height="40px"/>
+            <h1>Skynet AI</h1>
+            <div id="menu">
+              <a class="pulse" href="index.html">Inicio</a>
+              <a class="pulse" href="nosotros.html">Acerca de nosotros</a>
+              <a class="pulse" href="contacto.html">Contacto</a>
+            </div>
+        </li>
+        <li id="login">
+            <a id="log" href="login.html">Log In</a>
+            <a id="sign" href="sign.html">Sign Up</a>
+            <a href="ayudas.html" id="ayuda" class="ayuda"><img src="img/ayuda.png" alt="Icono de Ayuda" height="25px"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>  
+      <div id="contenido">
+        <form action="php/validar.php" method="post">
+            <h1>Iniciar Sesión</h1>
+            <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo" required>
+            <input class="controls" type="password" name="txtPassword" id="txtPassword" placeholder="Ingrese su Contraseña" required>
+            <button id="send" name="login" value="login">Iniciar Sesión</button>
+            <p><a href="sign.html">¿No tienes cuenta?</a></p>
+        </form>
+      </div>
+      
+    <footer class="footer">
+        <div class="container-permisos" >
+          <small>©Todos los derechos reservados Skynet AI. Esta página puede ser reproducida con fines
+            no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
+        </small>
+        </div>
+    </footer>
+</body>
+
+</html>
