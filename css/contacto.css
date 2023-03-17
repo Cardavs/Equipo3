@@ -1,14 +1,10 @@
 /*Contenido*/
 #contenido {
-    width: 100%;
-    height: auto; 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: 80vh;
+    height: 100vh;
+    flex-direction: row;
   }
 
 #contenido > * {
@@ -148,4 +144,113 @@
     margin-right: 50px; */
 }
 
+/*Resize*/
+@media (max-width: 1080px) { 
+    #contenido{
+        flex-direction: column;
+    }
+    #empresas{
+        height: 150px;
+        width: 320px;
+        font-size: 12px;
+    }
+    #empresas img{
+        height: 100px;
+    }
 
+    #empresas_2 p:nth-of-type(1){
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    #empresas_2 p:nth-of-type(2){
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    
+    #empresas_2 p:nth-of-type(3){
+        font-size: 16px;
+    }
+    
+    #empresas:hover {
+        background-color: #e6eeef;
+        height: 155px;
+        width: 325px;
+    }
+    
+    #empresas:hover img{
+        filter: contrast(1.2);
+    }
+
+    #publici{
+        height: 150px;
+        width: 320px;
+        font-size: 12px;
+    }
+
+    #publici img{
+        height: 100px;
+    }
+
+    #publici_2 p:nth-of-type(1){
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    #publici_2 p:nth-of-type(2){
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    
+    #publici_2 p:nth-of-type(3){
+        font-size: 16px;
+    }
+    
+    #publici:hover {
+        background-color: #e6eeef;
+        height: 155px;
+        width: 325px;
+    }
+    
+    #publici:hover img{
+        filter: contrast(1.2);
+    }
+
+    #soporte{
+        height: 150px;
+        width: 320px;
+        font-size: 12px;
+    }
+
+    #soporte img{
+        height: 100px;
+    }
+
+    #soporte_2 p:nth-of-type(1){
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    
+    #soporte_2 p:nth-of-type(2){
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    
+    #soporte_2 p:nth-of-type(3){
+        font-size: 16px;
+    }
+    
+    #soporte:hover {
+        background-color: #e6eeef;
+        height: 155px;
+        width: 325px;
+    }
+    
+    #soporte:hover img{
+        filter: contrast(1.2);
+    }
+
+}

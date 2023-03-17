@@ -31,7 +31,6 @@
 /*importante*/
 
 #importante{
-  
    padding-left: 50px;
    background-color: rgb(208, 236, 246, 0.6);
 }
@@ -73,4 +72,34 @@
   background-color: white;
   width: 660px;
   height: 230px;
+}
+
+@media (max-width: 1080px) {
+  #contenido h1{
+    font-size: 25px;
+  }
+  .box{
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  #importante{  
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  #email{
+    font-size: 12px;
+  }
+  #email:hover{
+    background-color: white;
+    width: 260px;
+    height: 410px;
+  }
+  #importante:hover{
+    background-color: white;
+    width: 260px;
+    height: 410px;
+  }
 }

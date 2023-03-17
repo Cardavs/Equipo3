@@ -1,13 +1,12 @@
 /*Contenido*/
 
 #contenido {
-  width: 100%;
-  height: 500px; 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   flex-direction: row;
-  justify-content: space-around;
-  flex-flow: wrap;
-  align-items: center; 
 }
 
 
@@ -46,144 +45,37 @@
 #empresa{
   border-radius: 25px;
 }
-/*Botones menu*/
 
-.pulse:hover,
-.pulse:focus {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-.pulse {
-  --color: #000000;
-  --hover: #ffffff;
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
+@media (max-width: 1080px) {
+  /*nosotros*/
 
-#menu a {
-  background: none;
-  font: inherit;
-  margin: 0.5em;
-  padding: 0.7em 1em;
-}
-#menu a {
-  color: var(--color);
-  transition: 0.25s;
-}
-#menu a:hover, #menu a:focus {
-  border-color: var(--hover);
-  color: #fff;
-}
-
-/*Botones login*/
-
-#sign{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transition-duration: 0.3s;
-    border: none;
-    padding: 4px 20px;
+  #nosotros{
+    width: 450px;
+    height: 220px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    cursor: pointer;
-    font-family: inherit;
-    margin-right: 20px;
-}
-
-#log{
-    background-color: #ffffff;
-    color: rgb(15, 15, 15);
-    transition-duration: 0.3s;
-    border: none;
-    padding: 4px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    cursor: pointer;
-    font-family: inherit;
-    margin-right: 20px;
-}
-
-#login a{
+    border: 1px solid black;
     border-radius: 25px;
-}
+    box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.3);
+    transition-duration: 0.3s;
+    margin: 50px;
+    padding: 10px;
+    background-color: rgb(208, 236, 246, 0.6);
+  }
 
-#log:hover{
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 19px;
-}
+  #nosotros p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
 
-#sign:hover{
+  #nosotros:hover{
     background-color: white;
-    color: #000000;
-    font-size: 19px;
-}
-
-/*Botones prueba*/
-#probar{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    transition-duration: 0.3s;
-    border: none;
-    padding: 4px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    cursor: pointer;
-    font-family: inherit;
-    color: var(--color);
-}
-
-#probar{
-    border-radius: 25px;
-}
-
-#probar:hover{
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#probar:hover,
-#probar:focus {
-  -webkit-animation: pulse 1s;
-          animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-#probar {
-  --color: #ffffff;
-  --hover: #000000;
-}
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
+    width: 500px;
+    height: 230px;
   }
-}
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
+
+  #contenido img{
+    display: none;
   }
-}
 
-#test a {
-  color: var(--color);
-  transition: 0.25s;
 }
-#test a:hover, #test a:focus {
-  border-color: var(--hover);
-  color: #000000;
-}
-
